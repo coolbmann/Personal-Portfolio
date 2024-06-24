@@ -1,16 +1,22 @@
-import React from "react";
+import React, { RefObject } from "react";
 import nogginPic from "../../../assets/noggin.png";
 
-const Portfolio = () => {
+interface props {
+  refProp: RefObject<HTMLDivElement>;
+}
+
+const Portfolio = ({ refProp }: props) => {
   return (
-    <div className="flex flex-col mt-8 gap-12">
+    <div ref={refProp} className="flex flex-col mt-8 gap-12">
       <div className=" py-4">
-        <span className="bg-gray-200 px-8 py-4">A PROJECT THAT...</span>
+        <span className="bg-gray-200 px-8 py-4 text-sm">A PROJECT THAT...</span>
       </div>
       <div className="grid grid-cols-2 grid-rows-2 gap-y-12">
         <div className="flex flex-col gap-8">
           <div>
-            <span className="shadow-custom-inset">I BUILT FULLSTACK</span>
+            <span className="shadow-custom-inset">
+              IS A FULLSTACK APPLICATION
+            </span>
           </div>
           <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
             <img src={nogginPic} alt="" className="object-cover h-48 w-full" />
@@ -32,7 +38,7 @@ const Portfolio = () => {
         </div>
         <div className="flex flex-col gap-8">
           <div>
-            <span className="shadow-custom-inset">SAVED TIME AT WORK</span>
+            <span className="shadow-custom-inset">AUTOMATED MY WORK DAY</span>
           </div>
           <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
             <img src={nogginPic} alt="" className="object-cover h-48 w-full" />

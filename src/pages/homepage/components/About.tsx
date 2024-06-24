@@ -1,17 +1,31 @@
-import React from "react";
+import React, { ReactElement, RefObject } from "react";
 import profilePic from "../../../assets/profilePic.jpeg";
+import { TypeAnimation } from "react-type-animation";
 
-const About = () => {
+interface props {
+  refProp: RefObject<HTMLDivElement>;
+}
+
+const About = ({ refProp }: props) => {
   return (
     <div className="flex flex-col gap-36">
       {/* Name */}
-      <div className="flex flex-col gap-4">
+      <div ref={refProp} className="flex flex-col gap-4">
         <div className="font-roboto font-bold text-3xl mt-44">
           Bryan Herijanto
         </div>
         <div className="text-sm">
-          Strategy, Product, and aspiring Software Engineer from Sydney,
-          Australia
+          <TypeAnimation
+            sequence={[
+              "Strategy, Product, and aspiring Software Engineer from Sydney, Australia.",
+              6000,
+              "",
+              200,
+            ]}
+            repeat={Infinity}
+            speed={70}
+            deletionSpeed={90}
+          />
         </div>
       </div>
       {/* About Me */}
@@ -34,7 +48,8 @@ const About = () => {
               <br />
               I'm a self-starter with a{" "}
               <span className="font-medium">get sh*t done attitude</span>, and I
-              believe growth is only a Google Search and a good mentor away.
+              believe growth is often only a Google Search and a good mentor
+              away.
               <br />
               <br />
               If you're on this page,{" "}
