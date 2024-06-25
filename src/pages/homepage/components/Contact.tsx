@@ -1,18 +1,17 @@
-import React, { RefObject } from "react";
+import React, { RefObject, useContext, useReducer, useRef } from "react";
 import {
   Github,
   Email,
   LinkedIn,
   Phone,
 } from "../../../assets/svg-files/index";
+import { refContext } from "../../../App";
 
-interface props {
-  refProp: RefObject<HTMLDivElement>;
-}
+const Contact = () => {
+  const { contactRef } = useContext(refContext);
 
-const Contact = ({ refProp }: props) => {
   return (
-    <div ref={refProp} className="flex flex-col mt-8 gap-12">
+    <div ref={contactRef} className="flex flex-col mt-8 gap-12">
       <div className=" py-4">
         <span className="bg-gray-200 px-8 py-4 text-sm">LET'S CHAT!</span>
       </div>

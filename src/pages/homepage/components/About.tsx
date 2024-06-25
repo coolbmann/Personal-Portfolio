@@ -1,16 +1,15 @@
-import React, { ReactElement, RefObject } from "react";
+import React, { ReactElement, RefObject, useContext } from "react";
 import profilePic from "../../../assets/profilePic.jpeg";
 import { TypeAnimation } from "react-type-animation";
+import { refContext } from "../../../App";
 
-interface props {
-  refProp: RefObject<HTMLDivElement>;
-}
+const About = () => {
+  const { aboutRef } = useContext(refContext);
 
-const About = ({ refProp }: props) => {
   return (
     <div className="flex flex-col gap-36">
       {/* Name */}
-      <div ref={refProp} className="flex flex-col gap-4">
+      <div ref={aboutRef} className="flex flex-col gap-4">
         <div className="font-roboto font-bold text-3xl mt-44">
           Bryan Herijanto
         </div>

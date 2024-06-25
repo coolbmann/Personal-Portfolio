@@ -1,11 +1,22 @@
-import { useRef, useState } from "react";
+import { RefObject, createContext, useContext, useRef, useState } from "react";
 import "./index.css";
 import Sidebar from "./pages/homepage/components/Sidebar";
-import About from "./pages/homepage/components/About";
-import Experience from "./pages/homepage/components/Experience";
-import Portfolio from "./pages/homepage/components/Portfolio";
-import Contact from "./pages/homepage/components/Contact";
 import Footer from "./pages/homepage/components/Footer";
+import Homepage from "./pages/homepage/Homepage";
+import { Outlet, Route, Routes } from "react-router-dom";
+import Noggin from "./pages/project-detail/Noggin";
+
+interface RefContextInterface {
+  aboutRef: RefObject<HTMLDivElement> | null;
+  portfolioRef: RefObject<HTMLDivElement> | null;
+  contactRef: RefObject<HTMLDivElement> | null;
+}
+
+const refContext = createContext<RefContextInterface>({
+  aboutRef: null,
+  portfolioRef: null,
+  contactRef: null,
+});
 
 function App() {
   const [count, setCount] = useState(3);
@@ -27,16 +38,18 @@ function App() {
         }}
       />
       <div className="flex flex-col mx-auto w-6/12 max-w-4xl">
-        <div className="flex flex-col mx-auto">
-          <About refProp={aboutRef} />
-          <Experience />
-          <Portfolio refProp={portfolioRef} />
-          <Contact refProp={contactRef} />
-        </div>
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/projects/noggin" element={<Noggin />} />
+        </Routes>
+
+        <refContext.Provider value={{ aboutRef, portfolioRef, contactRef }}>
+          <Outlet />
+        </refContext.Provider>
         <Footer />
       </div>
     </div>
   );
 }
 
-export default App;
+export { App, refContext };
