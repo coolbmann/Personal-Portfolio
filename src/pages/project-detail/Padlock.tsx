@@ -1,9 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 import { Github } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
 
-const Noggin = () => {
+const Padlock = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 25 }}
@@ -15,25 +15,25 @@ const Noggin = () => {
         <div className="mt-24">
           <img src="" alt="" />
           {/* Replace box with GIF of product */}
-          <div className="w-full h-[32.16rem] bg-purple-300"></div>
+          <div className="w-full h-[32.16rem] bg-black"></div>
         </div>
         <div>
           <div className="flex justify-between items-center font-bebas text-5xl">
-            <div className="m-0">NOGGIN</div>
+            <div className="m-0">PADLOCK</div>
             <div className="flex gap-1 h-4">
               <a
-                href="https://github.com/coolbmann/Project_Noggin/tree/master"
+                href="https://github.com/coolbmann/Project-Padlock"
                 target="blank"
               >
                 <Github color="#000000" />
               </a>
-              <a href="https://noggin-app.bryanherijanto.com/" target="blank">
+              <a href="https://project-padlock.onrender.com/" target="blank">
                 <Web color="#000000" />
               </a>
             </div>
           </div>
           <div className="text-[13px] leading-5 font-light mt-2">
-            A full-stack quiz hub with session based user-management.
+            A simple tool to generate random password strings.
           </div>
         </div>
         <div className="flex flex-col gap-8">
@@ -42,26 +42,26 @@ const Noggin = () => {
               <span className="text-lg font-medium">Overview</span>
             </div>
             <div className="text-[13px] leading-5 font-light">
-              This project was inspired by agruably my favourite daily company
-              ritual in my time at MILKRUN: 5PM Trivia.
+              This simple project was the second I've built, which I used to
+              gain practical experience with building business logic using
+              JavaScript.
               <br />
               <br />
-              This is a{" "}
+              Structured as a{" "}
               <span className="font-normal text-custom-orange">
-                full-stack application
+                single-page application
               </span>
-              , with a minimal layer of authentication, automated through
-              session cookies. When users open the app, a unique user instance
-              is provisioned and becomes accessible in the browser for 24 hours.
+              , the app allows users to customise the character type to include
+              in their password, as well as specify its length.
               <br />
               <br />
-              During this window, users have the ability to complete quizzes to
-              collect points and make their way up the community leaderboard.
+              The option also exists to include English words into the password
+              to make it easier to remember.
               <br />
               <br />
-              Users also have the ability to contribute by creating "Community
-              Made" quizzes, with the help of our question generation engine to
-              fill in the gaps where needed.
+              There is also strength logic baked into the app to determine the
+              strength of the password based on it's length and variation in
+              characters used.
             </div>
           </div>
         </div>
@@ -71,26 +71,19 @@ const Noggin = () => {
               <span className="text-lg font-medium">Technologies Used</span>
             </div>
             <div className="text-[13px] leading-5 font-light">
-              <span className="font-normal text-custom-orange">React</span> and{" "}
-              <span className="font-normal text-custom-orange">Node.js</span>{" "}
-              powers the front and back-end respectively, alongside a{" "}
-              <span className="font-normal text-custom-orange">
-                PostgreSQL{" "}
-              </span>
-              database hosted on Supabase.
+              <span className="font-normal text-custom-orange">Vanilla JS</span>{" "}
+              and
+              <span className="font-normal text-custom-orange"> CSS</span> is
+              used to build the logic and styling of the application.
               <br />
               <br />
-              Both FE and BE is written in{" "}
-              <span className="font-normal text-custom-orange">TypeScript</span>
-              , and{" "}
-              <span className="font-normal text-custom-orange">Express</span>{" "}
-              leveraged as the server side framework. No ORM was used for this
-              project.
-              <br />
-              <br />
-              The static site and web service is hosted through{" "}
+              The static site is hosted through{" "}
               <span className="font-normal text-custom-orange">Render</span> as
               the hosting provider.
+              <br />
+              <br />
+              Given the lightweight nature of the app, the entire codebase
+              including service logic is hosted on the client-side.
             </div>
           </div>
         </div>
@@ -104,36 +97,24 @@ const Noggin = () => {
                 <li className="relative flex list-inside">
                   <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
                   <div className="pl-4 ">
-                    Browse through quizzes and complete trivia in a multiple
-                    choice style quiz;
+                    Choose one or many character options from uppercase,
+                    lowercase, numbers and symbols;
                   </div>
                 </li>
                 <li className="relative flex list-inside">
                   <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
                   <div className="pl-4 ">
-                    Drag-and-drop functionality to re-order question sequence in
-                    the quiz creator;
+                    Include lexical words from the English language;
                   </div>
                 </li>
                 <li className="relative flex list-inside">
                   <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
-                  <div className="pl-4 ">
-                    Question generation engine to support the creation of
-                    "Community Made" quizzes;
-                  </div>
+                  <div className="pl-4 ">Slider to select desired length;</div>
                 </li>
                 <li className="relative flex list-inside">
                   <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
                   <div className="pl-4 ">
-                    Persisted, session-based user provisioning;
-                  </div>
-                </li>
-
-                <li className="relative flex list-inside">
-                  <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
-                  <div className="pl-4 ">
-                    Custom made toast component to handle warning, error and
-                    success notifications in the UI.
+                    Strength gauge for the generated password;
                   </div>
                 </li>
               </ul>
@@ -147,9 +128,9 @@ const Noggin = () => {
             </div>
             <div className="text-[13px] leading-5 font-light">
               View the live app at{" "}
-              <a href="https://noggin-app.bryanherijanto.com/" target="blank">
+              <a href="https://padlock-app.bryanherijanto.com/" target="blank">
                 <span className="font-normal text-custom-orange hover:underline">
-                  noggin-app.bryanherijanto.com
+                  padlock-app.bryanherijanto.com
                 </span>
               </a>
               .
@@ -157,7 +138,7 @@ const Noggin = () => {
               <br />
               View the Github repo{" "}
               <a
-                href="https://github.com/coolbmann/Project_Noggin/tree/master"
+                href="https://github.com/coolbmann/Project-Padlock"
                 target="blank"
               >
                 <span className="font-normal text-custom-orange hover:underline">
@@ -174,4 +155,4 @@ const Noggin = () => {
   );
 };
 
-export default Noggin;
+export default Padlock;

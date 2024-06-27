@@ -3,7 +3,7 @@ import "./index.css";
 import Sidebar from "./pages/homepage/components/Sidebar";
 import Footer from "./pages/homepage/components/Footer";
 import Homepage from "./pages/homepage/Homepage";
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import Noggin from "./pages/project-detail/Noggin";
 
 interface RefContextInterface {
@@ -38,11 +38,6 @@ function App() {
         }}
       />
       <div className="flex flex-col mx-auto w-6/12 max-w-4xl">
-        <Routes>
-          <Route path="/" element={<Homepage />}></Route>
-          <Route path="/projects/noggin" element={<Noggin />} />
-        </Routes>
-
         <refContext.Provider value={{ aboutRef, portfolioRef, contactRef }}>
           <Outlet />
         </refContext.Provider>
