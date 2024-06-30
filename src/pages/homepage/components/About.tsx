@@ -13,7 +13,7 @@ const About = () => {
         <div className="font-roboto font-bold text-3xl mt-44">
           Bryan Herijanto
         </div>
-        <div className="text-sm">
+        <div className="text-sm text-gray-600">
           <TypeAnimation
             sequence={[
               "Strategy, Product, and aspiring Software Engineer from Sydney, Australia.",

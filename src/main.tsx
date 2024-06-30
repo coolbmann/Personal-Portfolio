@@ -13,6 +13,7 @@ import Noggin from "./pages/project-detail/Noggin.tsx";
 import ContractGenerator from "./pages/project-detail/ContractGenerator.tsx";
 import Padlock from "./pages/project-detail/Padlock.tsx";
 import OnCue from "./pages/project-detail/OnCue.tsx";
+import Resume from "./pages/project-detail/Resume.tsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "projects/oncue",
         element: <OnCue />,
+      },
+      {
+        path: "projects/my-portfolio",
+        element: <Resume />,
       },
       {
         path: "",
