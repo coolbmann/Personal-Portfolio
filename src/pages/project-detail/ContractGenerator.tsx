@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { Github } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
+import Video from "../../assets/project-videos/Contract-Generator.mp4";
 
 const ContractGenerator = () => {
   useEffect(() => {
@@ -21,9 +22,18 @@ const ContractGenerator = () => {
     >
       <div className="flex flex-col gap-10 mx-auto">
         <div className="mt-24">
-          <img src="" alt="" />
-          {/* Replace box with GIF of product */}
-          <div className="w-full aspect-video bg-purple-300"></div>
+          <video
+            className="w-full aspect-video object-cover border-gray-200 border-2"
+            autoPlay
+            controls
+            muted
+            loop
+          >
+            <source src={Video} type="video/mp4" />
+          </video>
+
+          {/* Implement fallback component */}
+          {/* <div className="w-full aspect-video bg-purple-300"></div>  */}
         </div>
         <div>
           <div className="flex justify-between items-center font-bebas text-5xl">

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
+import pic from "../../assets/oncue.png";
 
 const OnCue = () => {
   useEffect(() => {
@@ -19,9 +20,9 @@ const OnCue = () => {
     >
       <div className="flex flex-col gap-10 mx-auto">
         <div className="mt-24">
-          <img src="" alt="" />
+          <img className="border-2" src={pic} alt="" />
           {/* Replace box with GIF of product */}
-          <div className="w-full aspect-video bg-purple-300"></div>
+          {/* <div className="w-full aspect-video bg-purple-300"></div> */}
         </div>
         <div>
           <div className="font-bebas text-5xl">OnCue</div>

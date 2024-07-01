@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import orangeTile from "../../../assets/portfolioTile.png";
 import padlockPic from "../../../assets/padlock.png";
 import contractPic from "../../../assets/contractGeneratorPic.png";
+import onCuePic from "../../../assets/oncue.png";
 
 const Portfolio = () => {
   const { portfolioRef } = useContext(refContext);
@@ -137,9 +138,9 @@ const Portfolio = () => {
             </div>
             <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
               <img
-                src={nogginPic}
+                src={onCuePic}
                 alt=""
-                className="object-cover h-48 w-full"
+                className="object-cover h-48 w-full border-b-2"
               />
               <div className="flex flex-col gap-4 px-8 py-4 text-sm font-light">
                 <div className="font-medium text-base">OnCue</div>
