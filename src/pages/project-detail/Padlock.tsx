@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Github } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
 import Video from "../../assets/project-videos/Padlock-Demo.mov";

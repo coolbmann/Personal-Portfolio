@@ -1,4 +1,4 @@
-import React, { ReactElement, RefObject, useContext } from "react";
+import { useContext } from "react";
 import profilePic from "../../../assets/profilePic.jpeg";
 import { TypeAnimation } from "react-type-animation";
 import { refContext } from "../../../App";

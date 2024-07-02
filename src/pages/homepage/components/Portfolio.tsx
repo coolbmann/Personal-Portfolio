@@ -1,4 +1,4 @@
-import React, { RefObject, useContext } from "react";
+import { useContext } from "react";
 import nogginPic from "../../../assets/noggin.png";
 import { refContext } from "../../../App";
 import { Link } from "react-router-dom";

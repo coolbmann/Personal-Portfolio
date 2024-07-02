@@ -1,4 +1,3 @@
-import React from "react";
 import { LinkedIn, Github } from "../../../assets/svg-files/index";
 
 const Footer = () => {

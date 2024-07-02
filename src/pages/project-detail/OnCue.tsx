@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import pic from "../../assets/oncue.png";
 
 const OnCue = () => {

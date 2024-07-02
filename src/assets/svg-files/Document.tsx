@@ -1,5 +1,3 @@
-import React from "react";
-
 interface props {
   color: string;
 }
@@ -13,7 +11,7 @@ const Document = ({ color }: props) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="253" height="305" rx="40" fill="black" />
+      <rect width="253" height="305" rx="40" fill={color} />
       <rect
         width="158"
         height="28"

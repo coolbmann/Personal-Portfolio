@@ -1,4 +1,3 @@
-import React, { RefObject } from "react";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";

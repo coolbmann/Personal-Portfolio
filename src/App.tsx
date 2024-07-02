@@ -1,10 +1,8 @@
-import { RefObject, createContext, useContext, useRef, useState } from "react";
+import { RefObject, createContext, useRef, useState } from "react";
 import "./index.css";
 import Sidebar from "./pages/homepage/components/Sidebar";
 import Footer from "./pages/homepage/components/Footer";
-import Homepage from "./pages/homepage/Homepage";
-import { Navigate, Outlet, Route, Routes } from "react-router-dom";
-import Noggin from "./pages/project-detail/Noggin";
+import { Outlet } from "react-router-dom";
 
 interface RefContextInterface {
   aboutRef: RefObject<HTMLDivElement> | null;
