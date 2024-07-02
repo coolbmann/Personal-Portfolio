@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A website to host my resume, experience, and projects.
 
-Currently, two official plugins are available:
+## 📄 Overview 
+This site was built to showcase my resume and projects, to help me transition from Product to a Software Engineering role.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with a focus on creating a pleasant UI/UX - check it out for yourself!
 
-## Expanding the ESLint configuration
+## 💡 Technologies Used 
+**React** powers this static site, **Vite** used to quickly spin up the site. No CMS was used for this project.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Tailwind CSS** is used for rapid development, and the site is hosted on **Render**.
 
-- Configure the top-level `parserOptions` property like this:
+## 🔥 Features 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Clean UI design;
+- Cool page transitions and auto-scroll capabilities;
+- You get to see a little bit of me!
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ⚡ See it in Action!
+View the live site at [bryanherijanto.com](https://bryanherijanto.com/).
