@@ -75,12 +75,17 @@ const About = () => {
           </div>
           <div className="col-span-2">
             <span className=" text-custom-orange font-normal">Stack: </span>
-            React, Node, TypeScript, Python, MySQL/PostgreSQL
+            React, Node.js, TypeScript, Python, MySQL/PostgreSQL
           </div>
         </div>
         <div>
           <button className=" bg-custom-orange font-light text-sm text-white px-8 py-4">
-            Download CV
+            <a
+              href="public/HERIJANTO, Bryan - Resume.pdf"
+              download="HERIJANTO, Bryan - Resume.pdf"
+            >
+              Download CV
+            </a>
           </button>
         </div>
         <div className="relative w-full h-8 flex items-center"></div>

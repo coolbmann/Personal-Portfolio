@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
-import { Github } from "../../assets/svg-files";
+import { Github, Document } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
 import Video from "../../assets/project-videos/Contract-Generator.mp4";
 
@@ -40,12 +40,21 @@ const ContractGenerator = () => {
             <div className="m-0">CONTRACT GENERATOR</div>
             <div className="flex gap-1 h-4">
               <a
-                href="https://github.com/coolbmann/Project_Noggin/tree/master"
+                href="https://docs.google.com/document/d/1wKKooBaRSzwePu-RoUYEMHRTRGERWN5HNzFlIfRi7L8/edit?usp=sharing"
+                target="blank"
+              >
+                <Document color="#000000" />
+              </a>
+              <a
+                href="https://github.com/coolbmann/Contract-Generator"
                 target="blank"
               >
                 <Github color="#000000" />
               </a>
-              <a href="https://noggin-app.bryanherijanto.com/" target="blank">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Ed2Xymlpe5NcSQnswnuqDThG6TL_uQRcjjUwlS0zsis/edit?gid=0#gid=0"
+                target="blank"
+              >
                 <Web color="#000000" />
               </a>
             </div>

@@ -68,8 +68,8 @@ const Experience = () => {
               </div>
               <div className="font-bold">
                 Assurance Cadet / PPE Consulting (Secondment)
+                <br />
                 <span className=" text-neutral-500 font-medium italic">
-                  {" "}
                   PwC Australia
                 </span>
               </div>

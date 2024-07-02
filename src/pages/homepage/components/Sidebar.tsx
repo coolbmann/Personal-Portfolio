@@ -14,7 +14,9 @@ const Sidebar = ({
 }: props) => {
   return (
     <div className="sticky top-0 overscroll-none flex flex-col justify-center items-center gap-4 w-80 h-screen border-r-2 border-solid border-gray-400/15 z-10">
-      <div className="font-bebas text-4xl">Bryan Herijanto</div>
+      <Link to="/">
+        <div className="font-bebas text-4xl">Bryan Herijanto</div>
+      </Link>
       <div className="flex flex-col gap-2 text-sm font-light">
         <Link to="/">
           <div onClick={aboutClickHandler} className="hover:cursor-pointer">

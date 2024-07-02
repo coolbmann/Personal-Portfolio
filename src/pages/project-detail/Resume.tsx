@@ -33,12 +33,12 @@ const Resume = () => {
             <div className="m-0">BRYAN'S PORTFOLIO WEBSITE</div>
             <div className="flex gap-1 h-4">
               <a
-                href="https://github.com/coolbmann/Project_Noggin/tree/master"
+                href="https://github.com/coolbmann/Personal-Portfolio"
                 target="blank"
               >
                 <Github color="#000000" />
               </a>
-              <a href="https://noggin-app.bryanherijanto.com/" target="blank">
+              <a href="https://bryanherijanto.com/" target="blank">
                 <Web color="#000000" />
               </a>
             </div>
