@@ -5,7 +5,6 @@ import "./index.css";
 import {
   createBrowserRouter,
   Navigate,
-  redirect,
   RouterProvider,
 } from "react-router-dom";
 import Homepage from "./pages/homepage/Homepage.tsx";

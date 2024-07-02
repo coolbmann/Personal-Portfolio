@@ -17,7 +17,6 @@ const refContext = createContext<RefContextInterface>({
 });
 
 function App() {
-  const [count, setCount] = useState(3);
   const aboutRef = useRef<HTMLDivElement>(null);
   const portfolioRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
