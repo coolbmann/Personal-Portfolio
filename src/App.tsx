@@ -1,4 +1,4 @@
-import { RefObject, createContext, useRef, useState } from "react";
+import { RefObject, createContext, useRef } from "react";
 import "./index.css";
 import Sidebar from "./pages/homepage/components/Sidebar";
 import Footer from "./pages/homepage/components/Footer";
