@@ -5,7 +5,7 @@ interface props {
 const Web = ({ color }: props) => {
   return (
     <svg
-      className="h-full w-full"
+      className="h-full"
       viewBox="2 3 19 19"
       xmlns="http://www.w3.org/2000/svg"
     >
