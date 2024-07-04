@@ -21,7 +21,7 @@ const Noggin = () => {
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
       <div className="flex flex-col gap-10 mx-auto">
-        <div className="mt-24">
+        <div className="mt-8 sm:mt-24">
           <video
             className="w-full aspect-video object-cover border-gray-200 border-2"
             autoPlay
@@ -36,7 +36,7 @@ const Noggin = () => {
           {/* <div className="w-full aspect-video bg-purple-300"></div>  */}
         </div>
         <div>
-          <div className="flex justify-between items-center font-bebas text-5xl">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 font-bebas text-5xl">
             <div className="m-0">NOGGIN</div>
             <div className="flex gap-1 h-4">
               <a
@@ -50,7 +50,7 @@ const Noggin = () => {
               </a>
             </div>
           </div>
-          <div className="text-[13px] leading-5 font-light mt-2">
+          <div className="text-[13px] leading-5 font-light mt-4 sm:mt-2">
             A full-stack quiz hub with session based user-management.
           </div>
         </div>

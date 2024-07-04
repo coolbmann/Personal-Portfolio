@@ -15,7 +15,7 @@ const Portfolio = () => {
       <div className=" py-4">
         <span className="bg-gray-200 px-8 py-4 text-sm">A PROJECT THAT...</span>
       </div>
-      <div className="grid grid-cols-2 grid-rows-3 gap-y-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-12">
         <Link to="/projects/noggin">
           <div className="flex flex-col gap-8">
             <div>
@@ -23,7 +23,7 @@ const Portfolio = () => {
                 IS A FULLSTACK APPLICATION
               </span>
             </div>
-            <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
+            <div className="h-96 sm:w-10/12 border-solid border-2 group hover:cursor-pointer">
               <img
                 src={nogginPic}
                 alt=""
@@ -51,7 +51,7 @@ const Portfolio = () => {
             <div>
               <span className="shadow-custom-inset">AUTOMATED MY WORK DAY</span>
             </div>
-            <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
+            <div className="h-96 sm:w-10/12 border-solid border-2 group hover:cursor-pointer">
               <img
                 src={contractPic}
                 alt=""
@@ -79,7 +79,7 @@ const Portfolio = () => {
             <div>
               <span className="shadow-custom-inset">TAUGHT ME JAVASCRIPT</span>
             </div>
-            <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
+            <div className="h-96 sm:w-10/12 border-solid border-2 group hover:cursor-pointer">
               <img
                 src={padlockPic}
                 alt=""
@@ -107,7 +107,7 @@ const Portfolio = () => {
             <div>
               <span className="shadow-custom-inset">YOU'RE LOOKING AT!</span>
             </div>
-            <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
+            <div className="h-96 sm:w-10/12 border-solid border-2 group hover:cursor-pointer">
               <img
                 src={orangeTile}
                 alt=""
@@ -136,7 +136,7 @@ const Portfolio = () => {
                 I'M CURRENTLY WORKING ON...
               </span>
             </div>
-            <div className="h-96 w-10/12 border-solid border-2 group hover:cursor-pointer">
+            <div className="h-96 sm:w-10/12 border-solid border-2 group hover:cursor-pointer">
               <img
                 src={onCuePic}
                 alt=""

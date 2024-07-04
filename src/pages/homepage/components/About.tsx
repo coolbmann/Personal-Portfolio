@@ -13,7 +13,7 @@ const About = () => {
         <div className="font-roboto font-bold text-3xl mt-44">
           Bryan Herijanto
         </div>
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-gray-600 h-16 sm:h-auto">
           <TypeAnimation
             sequence={[
               "Strategy, Product, and aspiring Software Engineer from Sydney, Australia.",
@@ -32,7 +32,7 @@ const About = () => {
         <div>
           <span className="shadow-custom-inset">ABOUT INFORMATION</span>
         </div>
-        <div className="flex gap-8">
+        <div className="flex flex-col sm:flex-row gap-8">
           <img className="w-32 h-32 rounded-full" src={profilePic} alt="" />
           <div>
             <div className="font-light text-sm">
@@ -57,7 +57,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 font-roboto font-light text-sm grid grid-cols-3 grid-rows-2 gap-y-4">
+        <div className="mt-8 font-roboto font-light text-sm flex flex-col gap-4 sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-y-4">
           <div>
             <span className=" text-custom-orange font-normal">Age:</span> 23
           </div>

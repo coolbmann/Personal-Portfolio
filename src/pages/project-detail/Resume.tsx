@@ -21,7 +21,7 @@ const Resume = () => {
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
       <div className="flex flex-col gap-10 mx-auto">
-        <div className="mt-24">
+        <div className="mt-8 sm:mt-24">
           <img src="" alt="" />
           {/* Replace box with GIF of product */}
           <div className="w-full aspect-video">
@@ -29,7 +29,7 @@ const Resume = () => {
           </div>
         </div>
         <div>
-          <div className="flex justify-between items-center font-bebas text-5xl">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 font-bebas text-5xl">
             <div className="m-0">BRYAN'S PORTFOLIO WEBSITE</div>
             <div className="flex gap-1 h-4">
               <a
@@ -43,7 +43,7 @@ const Resume = () => {
               </a>
             </div>
           </div>
-          <div className="text-[13px] leading-5 font-light mt-2">
+          <div className="text-[13px] leading-5 font-light mt-4 sm:mt-2">
             A website to host my resume, experience, and projects.
           </div>
         </div>

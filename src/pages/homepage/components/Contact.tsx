@@ -18,7 +18,7 @@ const Contact = () => {
       <div>
         <span className="shadow-custom-inset">CONTACT INFORMATION</span>
       </div>
-      <div className="grid grid-cols-3 grid-rows-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <div className="flex flex-col gap-8">
           <div className="flex items-center justify-start gap-4">
             <div className="h-8">
@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="h-32"></div>
+      <div className="h-16 sm:h-32"></div>
     </div>
   );
 };

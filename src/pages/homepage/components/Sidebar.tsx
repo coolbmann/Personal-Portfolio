@@ -12,7 +12,7 @@ const Sidebar = ({
   contactClickHandler,
 }: props) => {
   return (
-    <div className="sticky top-0 overscroll-none flex flex-col justify-center items-center gap-4 w-80 h-screen border-r-2 border-solid border-gray-400/15 z-10">
+    <div className="hidden sticky top-0 sm:overscroll-none sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-4 sm:w-80 sm:h-screen sm:border-r-2 sm:border-solid sm:border-gray-400/15 sm:z-10">
       <Link to="/">
         <div className="font-bebas text-4xl">Bryan Herijanto</div>
       </Link>

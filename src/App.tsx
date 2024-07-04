@@ -34,7 +34,7 @@ function App() {
           contactRef.current?.scrollIntoView({ behavior: "smooth" });
         }}
       />
-      <div className="flex flex-col mx-auto w-6/12 max-w-4xl">
+      <div className="flex flex-col mx-auto w-10/12 sm:w-6/12 max-w-4xl">
         <refContext.Provider value={{ aboutRef, portfolioRef, contactRef }}>
           <Outlet />
         </refContext.Provider>

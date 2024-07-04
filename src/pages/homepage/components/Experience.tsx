@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid sm:grid-cols-2 gap-8">
         <div>
           <div className="mb-8">
             <span className="shadow-custom-inset">EXPERIENCE</span>
