@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import orangeTile from "../../../assets/portfolioTile.png";
 import padlockPic from "../../../assets/padlock.png";
 import contractPic from "../../../assets/contractGeneratorPic.png";
-import onCuePic from "../../../assets/oncue.png";
+import onCuePic from "../../../assets/oncueOTP.png";
 
 const Portfolio = () => {
   const { portfolioRef } = useContext(refContext);

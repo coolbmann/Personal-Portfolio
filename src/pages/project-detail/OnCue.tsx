@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import pic from "../../assets/oncue.png";
+import Video from "../../assets/project-videos/OnCue_Incomplete.mp4";
 
 const OnCue = () => {
   useEffect(() => {
@@ -20,9 +20,18 @@ const OnCue = () => {
     >
       <div className="flex flex-col gap-10 mx-auto">
         <div className="mt-8 sm:mt-24">
-          <img className="border-2" src={pic} alt="" />
-          {/* Replace box with GIF of product */}
-          {/* <div className="w-full aspect-video bg-purple-300"></div> */}
+          <video
+            className="w-full aspect-video object-cover border-gray-200 border-2"
+            autoPlay
+            controls
+            muted
+            loop
+          >
+            <source src={Video} type="video/mp4" />
+          </video>
+
+          {/* Implement fallback component */}
+          {/* <div className="w-full aspect-video bg-purple-300"></div>  */}
         </div>
         <div>
           <div className="font-bebas text-5xl">OnCue</div>
@@ -41,8 +50,8 @@ const OnCue = () => {
               <br />
               <br />
               Inspiration for the project came from my daily habit of leaving
-              exactly 7 minutes before my bus arrives, such that I minimise the
-              time waiting at my morning bus stop.
+              precisely 9 minutes before my bus arrives, in order to minimise
+              the time waiting at my morning bus stop.
               <br />
               <br />
               This{" "}
@@ -50,8 +59,9 @@ const OnCue = () => {
                 SMS service
               </span>{" "}
               allows users to login using an OTP, after which they can configure
-              a cron-job via the app to fire a real-time update of their
-              preferred public transport vehicle directly via text message.
+              a <span className="font-normal text-custom-orange">cron-job</span>{" "}
+              via the app to fire a real-time update of their preferred public
+              transport vehicle directly via text message.
             </div>
           </div>
         </div>
@@ -61,7 +71,7 @@ const OnCue = () => {
               <span className="text-lg font-medium">Technologies Used</span>
             </div>
             <div className="text-[13px] font-light">
-              <span className="font-normal text-custom-orange">NextJS</span>{" "}
+              <span className="font-normal text-custom-orange">React</span>{" "}
               powers the front-end framework, while{" "}
               <span className="font-normal text-custom-orange">Node.js</span> is
               used as the runtime environment. Data is managed in{" "}
@@ -79,13 +89,13 @@ const OnCue = () => {
               <br />
               This project also uses{" "}
               <span className="font-normal text-custom-orange">
-                Twilio's SMS API
+                Twilio's SMS and Verify API
               </span>{" "}
               to power message delivery and{" "}
               <span className="font-normal text-custom-orange">
                 TfNSW Open Data Hub
               </span>{" "}
-              for real-time transport data.
+              for static and real-time transport data.
               <br />
               <br />
               As with previous projects, the application will be hosted on
