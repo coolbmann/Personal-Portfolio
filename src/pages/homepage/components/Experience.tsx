@@ -1,10 +1,36 @@
 const Experience = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid sm:grid-cols-2 gap-8 tracking-wide-custom">
         <div>
           <div className="mb-8">
             <span className="shadow-custom-inset">EXPERIENCE</span>
+          </div>
+          <div className="grid grid-cols-[2px_2rem_1fr] font-light text-sm">
+            <div className="h-full bg-custom-orange mt-[1.188rem]"></div>
+            <div className="relative w-full h-10 flex items-center">
+              <div className="w-full h-0.5 bg-custom-orange relative"></div>
+            </div>
+            <div className="flex flex-col items-start m-0 gap-4">
+              <div className=" font-normal text-custom-orange px-4 py-2 border-custom-orange border-solid border-2">
+                2024-Present
+              </div>
+              <div className="font-bold">
+                Software Engineer
+                <br />
+                <span className=" text-neutral-500 font-medium italic">
+                  World Sport Action
+                </span>
+              </div>
+              <div className="pb-10">
+                Built serverless automation pipelines and cross-platform
+                integrations for match-day events.
+                <br />
+                <br />
+                Delivered full-stack implementation for a greenfield evaluations
+                product.
+              </div>
+            </div>
           </div>
           <div className="grid grid-cols-[2px_2rem_1fr] font-light text-sm">
             <div className="h-full bg-custom-orange mt-[1.188rem]"></div>
@@ -27,13 +53,12 @@ const Experience = () => {
                 product.
                 <br />
                 <br />
-                Managed the conversational, high-volume recruitment web platform
+                Owned the conversational, high-volume recruitment web platform
                 product.
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-[2px_2rem_1fr] font-light text-sm">
-            <div className="h-full bg-custom-orange mt-[1.188rem]"></div>
+          <div className="grid grid-cols-[2rem_1fr] font-light text-sm">
             <div className="relative w-full h-10 flex items-center">
               <div className="w-full h-0.5 bg-custom-orange relative"></div>
             </div>
@@ -56,7 +81,7 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-[2rem_1fr] font-light text-sm">
+          {/* <div className="grid grid-cols-[2rem_1fr] font-light text-sm">
             <div className="relative w-full h-10 flex items-center">
               <div className="w-full h-0.5 bg-custom-orange relative"></div>
             </div>
@@ -79,7 +104,7 @@ const Experience = () => {
                 scheme.
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div>
           <div className="mb-8">

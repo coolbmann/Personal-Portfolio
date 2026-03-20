@@ -10,13 +10,13 @@ const About = () => {
     <div className="flex flex-col gap-36">
       {/* Name */}
       <div ref={aboutRef} className="flex flex-col gap-4">
-        <div className="font-roboto font-bold text-3xl mt-44">
+        <div className="font-manrope font-bold text-4xl mt-44">
           Bryan Herijanto
         </div>
-        <div className="text-sm text-gray-600 h-16 sm:h-auto">
+        <div className="text-sm text-gray-600 h-16 sm:h-auto tracking-wide-custom">
           <TypeAnimation
             sequence={[
-              "Strategy, Product, and aspiring Software Engineer from Sydney, Australia.",
+              "Software Engineer (ex-product) from Sydney, Australia.",
               6000,
               "",
               200,
@@ -28,38 +28,39 @@ const About = () => {
         </div>
       </div>
       {/* About Me */}
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 tracking-wide-custom">
         <div>
           <span className="shadow-custom-inset">ABOUT INFORMATION</span>
         </div>
         <div className="flex flex-col sm:flex-row gap-8">
           <img className="w-32 h-32 rounded-full" src={profilePic} alt="" />
           <div>
-            <div className="font-light text-sm">
-              Hello! I’m <span className="font-medium">Bryan Herijanto</span>.
+            <div className="font-light text-[15px]">
+              Hello! I'm <span className="font-semibold">Bryan Herijanto</span>.
               Excited about all things product, data, and software engineering.{" "}
               <br />
-              <br />I have experience in high-growth{" "}
-              <span className="font-medium">operations strategy</span> and HR
-              tech<span className="font-medium"> product management</span>. Now,
-              I’m eager to get my hands dirty in the world of Software
-              Engineering! <br />
+              <br />I have a background in high-growth{" "}
+              <span className="font-semibold">
+                operations strategy
+              </span> and{" "}
+              <span className="font-semibold">product management</span>, now a
+              T-shaped engineer building great products.
+              <br />
               <br />
               I'm a self-starter with a{" "}
-              <span className="font-medium">get sh*t done attitude</span>, and I
-              believe growth is often only a Google Search and a good mentor
-              away.
+              <span className="font-semibold">bias for action</span>, powered up
+              by tokens.
               <br />
               <br />
               If you're on this page,{" "}
-              <span className="font-medium">drop me a line</span> and I'd love
+              <span className="font-semibold">drop me a line</span> and I'd love
               to grab a coffee and connect with you!
             </div>
           </div>
         </div>
-        <div className="mt-8 font-roboto font-light text-sm flex flex-col gap-4 sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-y-4">
+        <div className="mt-8 font-manrope font-light text-sm flex flex-col gap-4 sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-y-4">
           <div>
-            <span className=" text-custom-orange font-normal">Age:</span> 23
+            <span className=" text-custom-orange font-normal">Age:</span> 25
           </div>
           <div>
             <span className=" text-custom-orange font-normal">Phone:</span> +61
@@ -75,7 +76,7 @@ const About = () => {
           </div>
           <div className="col-span-2">
             <span className=" text-custom-orange font-normal">Stack: </span>
-            React, Node.js, TypeScript, Python, MySQL/PostgreSQL
+            React, Node.js, TypeScript, Python, Java, MySQL/PostgreSQL
           </div>
         </div>
         <div>

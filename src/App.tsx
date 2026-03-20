@@ -22,7 +22,7 @@ function App() {
   const contactRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="font-roboto flex">
+    <div className="font-manrope flex">
       <Sidebar
         aboutClickHandler={() => {
           aboutRef.current?.scrollIntoView({ behavior: "smooth" });
