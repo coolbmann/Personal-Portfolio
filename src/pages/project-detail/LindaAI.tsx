@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Github } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
 import Video from "../../assets/project-videos/new-noggin.mp4";
+import NotePanel from "../../components/NotePanel";
 
 const LindaAI = () => {
   useEffect(() => {
@@ -169,6 +170,13 @@ const LindaAI = () => {
                 LangChain4j
               </span>
               .
+              <br />
+              <br />
+              <NotePanel variant="info" title="Important Note">
+                Since a functional auth systen is a WIP in the app, any
+                recordings uploaded is publicly accessible. All data will be
+                deleted and reset with seed data every 24 hours.
+              </NotePanel>
             </div>
           </div>
         </div>
