@@ -1,17 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Github } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
-import Video from "../../assets/project-videos/new-noggin.mp4";
+import Video from "../../assets/project-videos/linda_ai.mp4";
 import NotePanel from "../../components/NotePanel";
 
 const LindaAI = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "instant",
     });
+  }, []);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2;
+    }
   }, []);
 
   return (
@@ -24,7 +32,8 @@ const LindaAI = () => {
       <div className="flex flex-col gap-10 mx-auto">
         <div className="mt-8 sm:mt-24">
           <video
-            className="w-full aspect-video object-cover border-gray-200 border-2"
+            ref={videoRef}
+            className="w-full border-gray-200 border-2"
             autoPlay
             controls
             muted
@@ -37,10 +46,13 @@ const LindaAI = () => {
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 font-bebas text-5xl">
             <div className="m-0">LINDA AI</div>
             <div className="flex gap-1 h-4">
-              <a href="https://github.com/placeholder" target="blank">
+              <a
+                href="https://github.com/coolbmann/project_voice_ai"
+                target="blank"
+              >
                 <Github color="#000000" />
               </a>
-              <a href="https://placeholder.com" target="blank">
+              <a href="https://linda-ai-app.bryanherijanto.com/" target="blank">
                 <Web color="#000000" />
               </a>
             </div>
@@ -170,14 +182,34 @@ const LindaAI = () => {
                 LangChain4j
               </span>
               .
-              <br />
-              <br />
-              <NotePanel variant="info" title="Important Note">
-                Since a functional auth systen is a WIP in the app, any
-                recordings uploaded is publicly accessible. All data will be
-                deleted and reset with seed data every 24 hours.
-              </NotePanel>
             </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
+            <div>
+              <span className="text-lg font-semibold">Features</span>
+            </div>
+            <ul className="text-sm leading-5 font-light tracking-wide-custom flex flex-col gap-3">
+              {[
+                "Real-time transcription via OpenAI's Realtime API, streamed back to the browser as you speak.",
+                "Async background processing on recording stop: filler-word removal, punctuation correction, AI summarisation, and auto-generated titles.",
+                "Semantic search powered by Pinecone.",
+                "RAG-based chat interface allowing users to ask natural language questions about their recordings, with responses grounded in retrieved context.",
+                "Hierarchical organisation through Collections and Sessions, with Q&A history scoped accordingly.",
+                "Note editing, for manual persistence of additional information.",
+              ].map((item, i) => (
+                <li key={i} className="relative flex">
+                  <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full flex-shrink-0"></span>
+                  <div className="pl-4">{item}</div>
+                </li>
+              ))}
+            </ul>
+            <NotePanel variant="info" title="Important Note">
+              Since a functional auth systen is a WIP in the app, any recordings
+              uploaded are publicly accessible. All data will be deleted and
+              reset with seed data every 24 hours.
+            </NotePanel>
           </div>
         </div>
         <div className="flex flex-col gap-8">
@@ -187,16 +219,19 @@ const LindaAI = () => {
             </div>
             <div className="text-sm leading-5 font-light tracking-wide-custom">
               View the live app at{" "}
-              <a href="https://placeholder.com" target="blank">
+              <a href="https://linda-ai-app.bryanherijanto.com/" target="blank">
                 <span className="font-normal text-custom-orange hover:underline">
-                  placeholder.com
+                  linda-ai-app.bryanherijanto.com
                 </span>
               </a>
               .
               <br />
               <br />
               View the Github repo{" "}
-              <a href="https://github.com/placeholder" target="blank">
+              <a
+                href="https://github.com/coolbmann/project_voice_ai"
+                target="blank"
+              >
                 <span className="font-normal text-custom-orange hover:underline">
                   here
                 </span>

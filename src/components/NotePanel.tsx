@@ -51,14 +51,14 @@ const NotePanel = ({ variant = "note", title, children }: NotePanelProps) => {
 
   return (
     <div
-      className={`flex gap-3 border-l-4 ${border} ${bg} px-4 py-3 rounded-r`}
+      className={`flex gap-3 border-l-4 ${border} ${bg} px-4 py-3 rounded-r text-sm`}
     >
       <div className={`mt-0.5 shrink-0 ${iconClass}`}>{icons[variant]}</div>
       <div className="flex flex-col gap-1">
-        <div className="text-xs font-semibold tracking-wide-custom uppercase">
+        <div className="font-semibold tracking-wide-custom uppercase">
           {title ?? label}
         </div>
-        <div className="text-xs font-light tracking-wide-custom leading-5">
+        <div className="font-light tracking-wide-custom leading-5">
           {children}
         </div>
       </div>
