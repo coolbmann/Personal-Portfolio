@@ -35,7 +35,7 @@ const OnCue = () => {
         </div>
         <div>
           <div className="font-bebas text-5xl">OnCue</div>
-          <div className="text-[13px] font-light mt-2">
+          <div className="text-sm font-light tracking-wide-custom mt-2">
             An SMS service that let's you subscribe to real-time transport
             updates.
           </div>
@@ -43,9 +43,9 @@ const OnCue = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <div>
-              <span className="text-lg font-medium">Overview</span>
+              <span className="text-lg font-semibold">Overview</span>
             </div>
-            <div className="text-[13px] font-light">
+            <div className="text-sm font-light tracking-wide-custom">
               This project is currently a WIP.
               <br />
               <br />
@@ -68,9 +68,9 @@ const OnCue = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <div>
-              <span className="text-lg font-medium">Technologies Used</span>
+              <span className="text-lg font-semibold">Technologies Used</span>
             </div>
-            <div className="text-[13px] font-light">
+            <div className="text-sm font-light tracking-wide-custom">
               <span className="font-normal text-custom-orange">React</span>{" "}
               powers the front-end framework, while{" "}
               <span className="font-normal text-custom-orange">Node.js</span> is
@@ -106,9 +106,9 @@ const OnCue = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <div>
-              <span className="text-lg font-medium">Features</span>
+              <span className="text-lg font-semibold">Features</span>
             </div>
-            <div className="text-[13px] font-light">
+            <div className="text-sm font-light tracking-wide-custom">
               <ul>
                 <li className="relative flex list-inside">
                   <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
@@ -132,9 +132,9 @@ const OnCue = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <div>
-              <span className="text-lg font-medium">See it in Action!</span>
+              <span className="text-lg font-semibold">See it in Action!</span>
             </div>
-            <div className="text-[13px] font-light">
+            <div className="text-sm font-light tracking-wide-custom">
               This project is a WIP.
               <br />
               <br />

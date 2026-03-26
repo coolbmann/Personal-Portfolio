@@ -43,16 +43,16 @@ const Resume = () => {
               </a>
             </div>
           </div>
-          <div className="text-[13px] leading-5 font-light mt-4 sm:mt-2">
+          <div className="text-sm leading-5 font-light tracking-wide-custom mt-4 sm:mt-2">
             A website to host my resume, experience, and projects.
           </div>
         </div>
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">Overview</span>
+              <span className="text-lg font-semibold">Overview</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               What you see is what you get - you're on the site right now!
             </div>
           </div>
@@ -60,9 +60,9 @@ const Resume = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">Technologies Used</span>
+              <span className="text-lg font-semibold">Technologies Used</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               <span className="font-normal text-custom-orange">React</span>{" "}
               powers this static site,{" "}
               <span className="font-normal text-custom-orange">Vite</span> used
@@ -80,9 +80,9 @@ const Resume = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">Features</span>
+              <span className="text-lg font-semibold">Features</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               <ul>
                 <li className="relative flex list-inside">
                   <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
@@ -107,9 +107,9 @@ const Resume = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">See it in Action!</span>
+              <span className="text-lg font-semibold">See it in Action!</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               You're looking at it 😎
             </div>
           </div>

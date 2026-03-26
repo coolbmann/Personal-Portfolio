@@ -50,16 +50,16 @@ const Noggin = () => {
               </a>
             </div>
           </div>
-          <div className="text-[13px] leading-5 font-light mt-4 sm:mt-2">
+          <div className="text-sm leading-5 font-light tracking-wide-custom mt-4 sm:mt-2">
             A full-stack quiz hub with session based user-management.
           </div>
         </div>
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">Overview</span>
+              <span className="text-lg font-semibold">Overview</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               This project was inspired by agruably my favourite daily company
               ritual in my time at MILKRUN: 5PM Trivia.
               <br />
@@ -86,9 +86,9 @@ const Noggin = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">Technologies Used</span>
+              <span className="text-lg font-semibold">Technologies Used</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               <span className="font-normal text-custom-orange">React</span> and{" "}
               <span className="font-normal text-custom-orange">Node.js</span>{" "}
               powers the front and back-end respectively, alongside a{" "}
@@ -115,9 +115,9 @@ const Noggin = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">Features</span>
+              <span className="text-lg font-semibold">Features</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               <ul>
                 <li className="relative flex list-inside">
                   <span className="absolute left-0 top-2 w-1 h-1 bg-custom-orange rounded-full"></span>
@@ -161,9 +161,9 @@ const Noggin = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div>
-              <span className="text-lg font-medium">See it in Action!</span>
+              <span className="text-lg font-semibold">See it in Action!</span>
             </div>
-            <div className="text-[13px] leading-5 font-light">
+            <div className="text-sm leading-5 font-light tracking-wide-custom">
               View the live app at{" "}
               <a href="https://noggin-app.bryanherijanto.com/" target="blank">
                 <span className="font-normal text-custom-orange hover:underline">

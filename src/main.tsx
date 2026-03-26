@@ -13,6 +13,7 @@ import ContractGenerator from "./pages/project-detail/ContractGenerator.tsx";
 import Padlock from "./pages/project-detail/Padlock.tsx";
 import OnCue from "./pages/project-detail/OnCue.tsx";
 import Resume from "./pages/project-detail/Resume.tsx";
+import LindaAI from "./pages/project-detail/LindaAI.tsx";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "projects/my-portfolio",
         element: <Resume />,
+      },
+      {
+        path: "projects/linda-ai",
+        element: <LindaAI />,
       },
       {
         path: "",

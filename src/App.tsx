@@ -2,7 +2,7 @@ import { RefObject, createContext, useRef } from "react";
 import "./index.css";
 import Sidebar from "./pages/homepage/components/Sidebar";
 import Footer from "./pages/homepage/components/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
 interface RefContextInterface {
   aboutRef: RefObject<HTMLDivElement> | null;
@@ -20,19 +20,27 @@ function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const portfolioRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollOrNavigate = (
+    ref: RefObject<HTMLDivElement>,
+    section: string
+  ) => {
+    if (location.pathname === "/") {
+      ref.current?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/", { state: { scrollTo: section } });
+    }
+  };
 
   return (
-    <div className="font-roboto flex">
+    <div className="font-manrope flex">
       <Sidebar
-        aboutClickHandler={() => {
-          aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-        }}
-        portfolioClickHandler={() => {
-          portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
-        }}
-        contactClickHandler={() => {
-          contactRef.current?.scrollIntoView({ behavior: "smooth" });
-        }}
+        homeClickHandler={() => navigate("/")}
+        aboutClickHandler={() => scrollOrNavigate(aboutRef, "about")}
+        portfolioClickHandler={() => scrollOrNavigate(portfolioRef, "portfolio")}
+        contactClickHandler={() => scrollOrNavigate(contactRef, "contact")}
       />
       <div className="flex flex-col mx-auto w-10/12 sm:w-6/12 max-w-4xl">
         <refContext.Provider value={{ aboutRef, portfolioRef, contactRef }}>
