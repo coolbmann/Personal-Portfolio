@@ -39,7 +39,7 @@ const Experience = () => {
             </div>
             <div className="flex flex-col items-start m-0 gap-4">
               <div className=" font-normal text-custom-orange px-4 py-2 border-custom-orange border-solid border-2">
-                2023-Present
+                2023-2024
               </div>
               <div className="font-bold">
                 Associate Product Manager
