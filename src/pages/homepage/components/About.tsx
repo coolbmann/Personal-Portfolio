@@ -44,7 +44,7 @@ const About = () => {
                 operations strategy
               </span> and{" "}
               <span className="font-semibold">product management</span>, now a
-              T-shaped engineer building great products.
+              software engineer looking to build great and meaningful products.
               <br />
               <br />
               I'm a self-starter with a{" "}
@@ -80,14 +80,13 @@ const About = () => {
           </div>
         </div>
         <div>
-          <button className=" bg-custom-orange font-light text-sm text-white px-8 py-4">
-            <a
-              href="public/HERIJANTO, Bryan - Resume.pdf"
-              download="HERIJANTO, Bryan - Resume.pdf"
-            >
-              Download CV
-            </a>
-          </button>
+          <a
+            className=" bg-custom-orange font-light text-sm text-white px-8 py-4"
+            href="public/HERIJANTO, Bryan - Resume.pdf"
+            download="HERIJANTO, Bryan - Resume.pdf"
+          >
+            Download CV
+          </a>
         </div>
         <div className="relative w-full h-8 flex items-center"></div>
       </div>
