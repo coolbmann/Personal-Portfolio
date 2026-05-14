@@ -14,6 +14,7 @@ import Padlock from "./pages/project-detail/Padlock.tsx";
 import OnCue from "./pages/project-detail/OnCue.tsx";
 import Resume from "./pages/project-detail/Resume.tsx";
 import LindaAI from "./pages/project-detail/LindaAI.tsx";
+import DuoAI from "./pages/project-detail/DuoAI.tsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
         element: <LindaAI />,
       },
       {
+        path: "projects/duo-ai",
+        element: <DuoAI />,
+      },
+      {
         path: "",
         element: <Homepage />,
       },
@@ -63,5 +68,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

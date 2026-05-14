@@ -8,6 +8,7 @@ import padlockPic from "../../../assets/padlock.png";
 import contractPic from "../../../assets/contractGeneratorPic.png";
 import onCuePic from "../../../assets/oncueOTP.png";
 import lindaAiPic from "../../../assets/lindaai.png";
+import duoAiPic from "../../../assets/duoai.png";
 
 const ProjectCard = ({
   to,
@@ -73,6 +74,13 @@ const Portfolio = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-8">
         <ProjectCard
+          to="/projects/duo-ai"
+          tag="SOLVES A PERSONAL PROBLEM WITH AGENTS"
+          img={duoAiPic}
+          title="Duo AI"
+          description="Agents connected with custom integrations to solve pickleball-related booking issues and DUPR analysis."
+        />
+        <ProjectCard
           to="/projects/linda-ai"
           tag="ORCHESTRATES AI MODELS"
           img={lindaAiPic}
@@ -116,7 +124,7 @@ const Portfolio = () => {
                 },
                 {
                   to: "/projects/oncue",
-                  tag: "I'M CURRENTLY WORKING ON...",
+                  tag: "IS A WIP...",
                   img: onCuePic,
                   title: "OnCue",
                   description:
