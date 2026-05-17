@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { Github } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
 import DisplayImage from "../../assets/portfolioTile.png";
+import { IoIosArrowRoundBack } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Resume = () => {
   useEffect(() => {
@@ -20,8 +22,15 @@ const Resume = () => {
       exit={{ opacity: 0, x: 25 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
+      <Link
+        to="/"
+        className="flex sm:hidden items-center gap-[2px] text-xs font-light mt-8"
+      >
+        <IoIosArrowRoundBack size={20} />
+        <span>Back to home</span>
+      </Link>
       <div className="flex flex-col gap-10 mx-auto">
-        <div className="mt-8 sm:mt-24">
+        <div className="mt-4 sm:mt-24">
           <img src="" alt="" />
           {/* Replace box with GIF of product */}
           <div className="w-full aspect-video">

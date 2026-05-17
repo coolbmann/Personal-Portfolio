@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Github } from "../../assets/svg-files";
 import Web from "../../assets/svg-files/Web";
 import Video from "../../assets/project-videos/new-noggin.mp4";
+import { IoIosArrowRoundBack } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Noggin = () => {
   useEffect(() => {
@@ -20,8 +22,15 @@ const Noggin = () => {
       exit={{ opacity: 0, x: 25 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
+      <Link
+        to="/"
+        className="flex sm:hidden items-center gap-[2px] text-xs font-light mt-8"
+      >
+        <IoIosArrowRoundBack size={20} />
+        <span>Back to home</span>
+      </Link>
       <div className="flex flex-col gap-10 mx-auto">
-        <div className="mt-8 sm:mt-24">
+        <div className="mt-4 sm:mt-24">
           <video
             className="w-full aspect-video object-cover border-gray-200 border-2"
             autoPlay
