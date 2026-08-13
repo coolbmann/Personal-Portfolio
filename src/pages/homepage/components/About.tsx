@@ -82,7 +82,7 @@ const About = () => {
         <div>
           <a
             className=" bg-custom-orange font-light text-sm text-white px-8 py-4"
-            href="public/HERIJANTO, Bryan - Resume.pdf"
+            href="/HERIJANTO, Bryan - Resume.pdf"
             download="HERIJANTO, Bryan - Resume.pdf"
           >
             Download CV
