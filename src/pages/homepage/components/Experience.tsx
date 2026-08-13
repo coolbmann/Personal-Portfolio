@@ -28,7 +28,7 @@ const Experience = () => {
                 <br />
                 <br />
                 Delivered full-stack implementation for a greenfield evaluations
-                product.
+                product, and rebuilt the officials management module.
               </div>
             </div>
           </div>
