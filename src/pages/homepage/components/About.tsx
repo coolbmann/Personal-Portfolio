@@ -44,7 +44,8 @@ const About = () => {
                 operations strategy
               </span> and{" "}
               <span className="font-semibold">product management</span>, now a
-              software engineer looking to build great and meaningful products.
+              software engineer looking to build and meaningful products with
+              purpose.
               <br />
               <br />
               I'm a self-starter with a{" "}
@@ -60,7 +61,7 @@ const About = () => {
         </div>
         <div className="mt-8 font-manrope font-light text-sm flex flex-col gap-4 sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-y-4">
           <div>
-            <span className=" text-custom-orange font-normal">Age:</span> 25
+            <span className=" text-custom-orange font-normal">Age:</span> 26
           </div>
           <div>
             <span className=" text-custom-orange font-normal">Phone:</span> +61
