@@ -19,7 +19,7 @@ const Experience = () => {
                 Software Engineer
                 <br />
                 <span className=" text-neutral-500 font-medium italic">
-                  World Sport Action
+                  SportsTech Org
                 </span>
               </div>
               <div className="pb-10">
