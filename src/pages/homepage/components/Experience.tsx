@@ -42,7 +42,7 @@ const Experience = () => {
                 2023-2024
               </div>
               <div className="font-bold">
-                Associate Product Manager
+                Product Manager
                 <br />
                 <span className=" text-neutral-500 font-medium italic">
                   Mercu
